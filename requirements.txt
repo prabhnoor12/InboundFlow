@@ -1,0 +1,26 @@
+alembic
+pydantic
+sqlalchemy
+
+# Core framework
+fastapi
+uvicorn[standard]
+
+# Database
+databases[postgresql]
+asyncpg
+
+# Authentication
+python-jose[cryptography]
+passlib[bcrypt]
+
+# Alembic for migrations (already present)
+
+# CORS
+starlette
+
+# Optional: dotenv for environment variables
+python-dotenv
+
+# Optional: HTTPX for async requests (if needed)
+httpx
