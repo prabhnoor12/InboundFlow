@@ -18,5 +18,6 @@ class InboundEmail(Base):
     sanitized = Column(Boolean, default=False)
     created_at = Column(DateTime, default=datetime.utcnow)
 
+    user = relationship("User", back_populates="inbound_emails")
     attachments = relationship("Attachment", back_populates="inbound_email")
     webhook_deliveries = relationship("WebhookDelivery", back_populates="inbound_email")
